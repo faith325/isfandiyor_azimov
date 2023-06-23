@@ -111,9 +111,21 @@ class _ThirdScreenState extends State<ThirdScreen> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                        usernameController.text,
-                            style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 24,fontWeight: FontWeight.w500,color: AppColors.C_674D3F)
+                        Row(
+                          children: [
+                            Text(
+                                firstNameController.text,
+
+                                style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 24,fontWeight: FontWeight.w500,color: AppColors.C_674D3F)
+                            ),
+                            SizedBox(width: 5.w,),
+                            Text(
+                                lastNameController.text,
+
+                                style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 24,fontWeight: FontWeight.w500,color: AppColors.C_674D3F)
+                            )
+
+                          ],
                         ),
                         SizedBox(height: 10.h,),
                         Text(
