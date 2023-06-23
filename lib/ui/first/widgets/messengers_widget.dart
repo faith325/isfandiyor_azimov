@@ -16,7 +16,7 @@ class MesengersWidget extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
-      width: width*(150/375),
+      width: 150.w,
       height: 55.h,
       decoration: BoxDecoration(
           border: Border.all(color: Color(0xFFBE9173),width:1.w),

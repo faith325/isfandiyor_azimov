@@ -61,7 +61,7 @@ class _SecondScreenState extends State<SecondScreen> {
               ),
               SizedBox(height: 15.h,),
               SizedBox(
-                height: height * 250 / 812,
+                height: 250.h,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -92,7 +92,7 @@ class _SecondScreenState extends State<SecondScreen> {
               ),
               SizedBox(height: 15.h,),
               SizedBox(
-                height: height * 250 / 812,
+                height: 250.h,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -127,7 +127,7 @@ class _SecondScreenState extends State<SecondScreen> {
         padding:  EdgeInsets.symmetric(vertical: 42.w,horizontal: 42.h),
         child: Container(
           height: 69.h,
-          width: width * 292 /375,
+          width: 292.w ,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(45),
             color: AppColors.C_FFF9F2,

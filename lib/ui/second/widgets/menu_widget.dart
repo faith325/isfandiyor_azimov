@@ -16,8 +16,8 @@ class MenuWidget extends StatelessWidget {
     return  Column(
       children: [
         Container(
-          width: width * 143 /375,
-          height: height * 182 / 812,
+          width: 143.w,
+          height: 182.h,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: AppColors.C_ECE1CF

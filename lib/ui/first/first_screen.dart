@@ -31,10 +31,9 @@ class FirstScreen extends StatelessWidget {
                 Stack(
                   children: [
                     Container(
-                      width: double.infinity,
                         child: Image.asset(AppIcons.appbar)),
                     Container(
-                      margin: EdgeInsets.only(left: width*(46/375),top: height*(56/812)),
+                      margin: EdgeInsets.only(left: 46.w,top: 56.h),
                       child: Row(
                         children: [
                           Column(
