@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:isfandiyor_azimov/ui/first/widgets/button_widgets.dart';
+import 'package:isfandiyor_azimov/ui/third/widgets/text_field_widget.dart';
 import 'package:isfandiyor_azimov/utills/color.dart';
 import 'package:isfandiyor_azimov/utills/icons.dart';
 
@@ -83,30 +85,17 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 ),
               ),
               SizedBox(height: 27.h,),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal:30.w ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                        "Username",
-                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 13,fontWeight: FontWeight.w400,color: AppColors.C_464646)
-                    ),
-                    SizedBox(height: 4.h,),
-                    TextField(
-                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 13,fontWeight: FontWeight.w400,color: AppColors.C_464646),
-                      decoration: InputDecoration(
-                       hintText:
-                          "Username",
-                        hintStyle:Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 13,fontWeight: FontWeight.w400,color: AppColors.C_464646.withOpacity(0.5)),
+              TextFieldWidget(title: "Username", textActionType: TextInputAction.next),
+              SizedBox(height: 38.h,),
+              TextFieldWidget(title: "First name", textActionType: TextInputAction.next),
+              SizedBox(height: 38.h,),
+              TextFieldWidget(title: "Last name", textActionType: TextInputAction.next),
+              SizedBox(height: 38.h,),
+              TextFieldWidget(title: "Date of birth", textActionType: TextInputAction.done),
+              SizedBox(height: 50.h,),
+              Center(child: ButtonWidget(text: "Sign Out"))
 
-                      ),
-
-                    )
-                  ],
-                ),
-
-              )
+              
 
 
 
