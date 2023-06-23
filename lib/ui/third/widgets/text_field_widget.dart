@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:isfandiyor_azimov/utills/color.dart';
 class TextFieldWidget extends StatelessWidget {
-  const TextFieldWidget({Key? key, required this.title,  required this.textActionType}) : super(key: key);
+  const TextFieldWidget({Key? key, required this.title,  required this.textActionType, required this.controller, required this.keyboardType}) : super(key: key);
   final String title;
   final TextInputAction textActionType;
+  final TextEditingController controller;
+  final TextInputType keyboardType;
 
 
   @override
@@ -41,8 +43,10 @@ class TextFieldWidget extends StatelessWidget {
                       color: AppColors.C_DEE1EF,)
                 )
             ),
-            keyboardType: TextInputType.text,
             textInputAction: textActionType,
+            controller: controller,
+            keyboardType: keyboardType,
+
           )
         ],
       ),

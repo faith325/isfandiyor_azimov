@@ -47,7 +47,7 @@ class FirstScreen extends StatelessWidget {
                               )
                             ],
                           ),
-                          Image.asset(AppIcons.coffee,width: width*(108/375),),
+                          Image.asset(AppIcons.coffee,width: 108.w,),
                         ],
                       ),
                     )
